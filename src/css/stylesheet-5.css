@@ -257,9 +257,9 @@ body {
   line-height: 40px;
   font-family: "gilroy-semibold";
 }
-.layout--twocol-section {
+/* .layout--twocol-section {
   gap: 1%;
-}
+} */
 .layout:first-child .block {
   margin-bottom: 0;
 }
@@ -268,13 +268,13 @@ body {
     > .layout__region--first,
   .layout--twocol-section.layout--twocol-section--75-25
     > .layout__region--second {
-    flex: 0 1 30%;
+    flex: 0 1 100%;
   }
   .layout--twocol-section.layout--twocol-section--25-75
     > .layout__region--second,
   .layout--twocol-section.layout--twocol-section--75-25
     > .layout__region--first {
-    flex: 0 1 69%;
+    flex: 0 1 100%;
   }
 }
 .entity-header {
@@ -315,38 +315,7 @@ body {
   padding: 5px;
   border-radius: 4px;
 }
-.highlighted-box {
-  background: rgba(21, 128, 61, 0.1);
-  border-radius: 5px;
-  text-align: left;
-  padding: 18px 24px 2px;
-}
-.highlighted-box .label {
-  font-family: "gilroy-regular";
-  color: #000;
-  margin: 0 0 22px 0;
-  padding: 0;
-}
-.highlighted-box .box-content {
-  margin-bottom: 24px;
-}
-.highlighted-box.box-green .label {
-  color: #15803d;
-}
-.highlighted-box.box-green .big-txt {
-  color: #15803d;
-  margin-bottom: 15px;
-}
-.highlighted-box.box-red {
-  background: rgba(239, 68, 68, 0.1);
-}
-.highlighted-box.box-red .label {
-  color: #ef4444;
-}
-.highlighted-box.box-red .big-txt {
-  color: #ef4444;
-  margin-bottom: 15px;
-}
+
 .content-sections ul {
   margin: 0;
   padding: 0;
@@ -776,31 +745,11 @@ a:focus {
   flex-direction: row;
   align-items: center;
 }
-.box-content > .icon-heading-label {
-  padding: 0px;
-  font-family: "gilroy-regular";
-  font-size: 16px;
-  opacity: 0.6;
-}
-.box-content > .icon-component-text {
-  font-size: 20px;
-  line-height: 150%;
-  font-family: "gilroy-medium";
-}
 .eligibility-criteria {
   color: #000000;
 }
 body {
   background-color: #ffffff;
-}
-.program-list-flex,
-.list-flex-container .view-content {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  margin-bottom: var(--margin-xl);
 }
 .program-component {
   box-sizing: border-box;
@@ -970,15 +919,7 @@ body {
   width: 100%;
   object-fit: cover;
 }
-.program-view-mentor-profile {
-  border-radius: 100%;
-  max-width: 300px;
-  aspect-ratio: 1;
-  min-width: 150px;
-  width: 220px;
-  overflow: hidden;
-  margin: 12px;
-}
+
 .program-view-partner-funds {
   max-width: 300px;
   aspect-ratio: 1;
